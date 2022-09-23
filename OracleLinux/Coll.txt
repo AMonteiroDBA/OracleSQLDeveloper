@@ -1,0 +1,13 @@
+- . oraenv
+- orcl1
+- lsnrctl
+- start
+- tnsping orcl1
+- sqlplus / as sysdba;
+- startup open;
+
+--Antes de Ejecutar algunos Comandos 
+alter session set "_ORACLE_SCRIPT"=true;
+
+------IMPORT
+impdp system/oralab123@localhost:1521/orcl1 schemas=hr directory='/Documentos/sample_schemas' dumpfile=EXPORTED_SAMPLE_SCHEMAS.dmp logfile=import.log remap_tablespace=EXAMPLE:USERS
