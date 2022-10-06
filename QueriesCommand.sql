@@ -47,5 +47,6 @@ Select * from dba_users;
 
 --Quuotas de Usuarios
 Select * from DBA_TS_QUOTAS;
+ALTER USER soe quota UNLIMITED ON SOETBS;
 
 ALTER USER soe quota 5m ON SOETBS;
