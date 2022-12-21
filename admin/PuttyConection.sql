@@ -12,6 +12,9 @@
 4)As root user => $root sudo dnf install openssh openssh-server
 5) enp0s8 get inet protocol : 192.168.1.101 
 6) put the inet into Putty and then connect
+
+Note: Test ping with enp0s8 or other protocol if apply. 
+Open CMD and write > ping 192.168.1.101
 */
 
 
